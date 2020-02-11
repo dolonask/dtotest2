@@ -4,6 +4,7 @@ import kg.easy.models.Good;
 import kg.easy.models.Operation;
 import kg.easy.models.OperationDetail;
 import kg.easy.models.dto.OperationDto;
+import kg.easy.services.ClassMapper;
 
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -11,6 +12,8 @@ import java.util.Date;
 import java.util.List;
 
 public class Main {
+
+    private static ClassMapper classMapper = ClassMapper.INSTANCE;
 
 
     public static void main(String[] args) {
@@ -38,6 +41,11 @@ public class Main {
 
 
 
+        /*
+            Good -> GoodDto
+            OperationDetail -> OperationDetailDto
+            Operation -> OperationDto
+         */
 
 
 
